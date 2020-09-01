@@ -21,6 +21,19 @@ html, body {
     overflow-x: hidden;
 }
 
+/* ------------ CLEARFIX   --------- */
+
+/* P3 */
+.clearfix {zoom: 1}
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+
 /* --------------------------------------- */
 /* REUSABLE COMPONENTS */
 /* --------------------------------------- */
@@ -186,6 +199,7 @@ a:active {
     background-color: #2980b9;
 }
 
+
 /* --------------------------------------- */
 /* P1 - HEADER */
 /* --------------------------------------- */
@@ -247,4 +261,44 @@ header {
 
 .section-features .long-copy {
     margin-bottom: 30px;
+}
+
+/* --------------------------------------- */
+/* P3 - IMPRESSIONS */
+/* --------------------------------------- */
+
+.section-impressions {
+    padding: 0;
+}
+
+.impressions-showcase {
+    list-style: none;
+    width: 100%;
+}
+
+.impressions-showcase li {
+    display: block;
+    float: left;
+    width: 25%;
+}
+
+.impression-photo {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background: #000;
+    
+}
+ 
+.impression-photo img {
+    opacity: 0.7;
+    width: 100%;
+    height: auto;
+    transform: scale(1.15);
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.impression-photo img:hover {
+    opacity: 1;
+    transform: scale(1.03);
 }
