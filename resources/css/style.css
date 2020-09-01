@@ -164,7 +164,8 @@ a:active {
 
 /* P1 */
 .btn:link, 
-.btn:visited {
+.btn:visited,
+input[type=submit] {
     display: inline-block;
     text-decoration: none;
     font-weight: 300;
@@ -175,7 +176,8 @@ a:active {
 
 /* P1 */
 .btn-full:link,
-.btn-full:visited {
+.btn-full:visited,
+input[type=submit] {
     /* Flat UI Colors used: https://flatuicolors.com/palette/defo */
     background-color: #2980b9;
     border: 1px solid #2980b9;
@@ -199,7 +201,9 @@ a:active {
 
 /* P1 */
 .btn-full:hover,
-.btn-full:active {
+.btn-full:active,
+input[type=submit]:hover,
+input[type=submit]:active {
     border: 1px solid #1e5c84;
     background-color: #1e5c84;
 }
