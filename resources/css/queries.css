@@ -1,20 +1,246 @@
-/* ---- Big tablets to Desktop: from 1024px to 1200px (smaller then the 1140px row) ---- */
+/* ----------------------------- P8 ----------------------------- */
 
+/* ---- Big tablets to Desktop: from 1024px to 1200px (smaller then the 1140px row) ---- */
+@media only screen and (max-width: 1200px) {
+
+    /* --- HEADER --- */
+    .hero-text-box {
+        width: 100%;
+        padding: 0 2%;
+    }
+
+    /*Remove unnecessary white space */
+    .row {
+        width: 100%;
+        padding: 0 2%;
+    }
+
+    /*Adjust menu */
+    .menu-right {
+        margin: 0 auto;
+        float: none;
+    }
+
+}
 
 /* ---- Small tablets to big tablets: from 768px to 1023px ---- */
+@media only screen and (max-width: 1023px) {
 
+    /* --- GENERAL --- */
+    /* Increase font size body */
+    body {
+        font-size: 18px;
+    }
+
+    /* Decrease padding of sections */
+    section {
+        padding: 60px 0;
+    }
+
+    /* --- HEADER --- */
+    /* leave font size of navigation */
+    .main-nav {
+        font-size: 16px;
+    }
+
+    /* --- SECTION 1 --- */
+    /* Increase width of subtitle */
+    .long-copy {
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    /* --- SECTION 3 --- */
+    /* Adjust margins section 3 */
+    .steps-box:first-child {
+        margin-top: 15px;
+    }
+
+    .steps-box:last-child {
+        margin-top: 10px;
+    }
+
+    .works-steps {
+        margin-bottom: 40px;
+    }
+
+    .works-step:last-of-type {
+        margin-bottom: 60px;
+    }
+
+    /* Increase size app screen */
+    .app-screen {
+        width: 50%;
+    }
+
+    /* --- SECTION 4 ---- */
+    /* Adjust size and margins of small icons */
+    .icon-small {
+        width: 17px;
+        margin-right: 5px;
+    }
+
+    /* Decrease font size */
+    .city-feature {
+        font-size: 80%;
+    }
+
+    /* Decrease margin has to be in percent! */
+    .box {
+        padding: 0%;
+    }
+
+    /* --- SECTION 6 --- */
+    /* Increase size of boxes and minimize margin */
+    .plan-box {
+        width: 100%;
+        margin-left: 0%;
+    }
+
+    /* Decrease font size price */
+    .plan-price {
+        font-size: 250%;
+    }
+
+    /* --- SECTION 7 --- */
+    /* Increase width form */
+    .contact-form {
+        width: 80%;
+    }
+
+    /* --- FOOTER --- */
+    /* Decrease margin */
+    .footer-nav li {
+        margin-right: 10px;
+    }
+}
 
 /* ---- Small Phones to small tablets: from 481px to 767px ---- */
+@media only screen and (max-width: 767px) {
+
+    /* --- GENERAL --- */
+    /* Decrase font size + padding */
+    body {
+        font-size: 16px;
+    }
+
+    section {
+        padding: 30px 0;
+    }
+
+    /* --- GENERAL + HEADER --- */
+    /* Adjust diff. sizes */
+    .row,
+    .hero-text-box {
+        padding: 0 4%;
+    }
+
+    .col {
+        width: 100%;
+        margin: 0 0 4% 0;
+    }
+
+    /* Decrease font size */
+    h1 {
+        font-size: 250%;
+    }
+
+    h2 {
+        font-size: 150%;
+    }
+
+    /* Adjust menu display */
+    .main-nav {
+        width: 100%;
+    }
+
+    .main-nav li {
+        margin-left: 5%;
+    }
+
+    /* --- SECTION 1 --- */
+    /* --- Adjust width --- */
+    .long-copy {
+        width: 100%;
+        margin-left: 0%;
+    }
+
+    /* --- SECTION 2 --- */
+    /* --- Make 2 columns --- */
+    .impressions-showcase li {
+        width: 50%;
+    }
+
+    /* --- SECTION 3 --- */
+    /* --- Adjust size numbers + app-screen etc. --- */
+    .works-step div {
+        height: 40px;
+        width: 40px;
+        margin-right: 15px;
+        padding: 4px;
+        font-size: 120%;
+    }
+
+    .app-screen {
+        width: 40%;
+    }
+
+    .works-step {
+        margin-bottom: 20px;
+    }
+
+    .works-step:last-of-type {
+        margin-bottom: 30px;
+    }
+
+    .steps-box:first-child {
+        text-align: center;
+    }
+
+}
 
 
 /* ---- Small Phones: 0 to 480px ---- */
+/*rules that apply to screen with 480px or less */
+@media only screen and (max-width: 480px) {
 
+    /* --- HEADER --- */
+    /* --- Adjust paddings --- */
+    .hero-text-box {
+        padding-top: 90px;
+    }
 
+    section {
+        padding: 25px 0;
+    }
 
+    /* --- SECTION 3 --- */
+    /* --- Adjust sizes --- */
+    .btn-app img {
+        height: 40px;
+        width: auto;
+    }
+    
+    /* --- SECTION 4 --- */
+    /* --- Adjust work break --- */
+    .no-break {
+        white-space:nowrap
+    }
 
+    /* --- SECTION 7 --- */
+    /* --- Adjust width form --- */
+    .contact-form {
+        width: 100%;
+    }
 
+    /* --- FOOTER --- */
+    /* --- Center all elements --- */
+    footer .row {
+        width: 70%;
+        text-align: center;
+    }
 
-
-
-
-
+    .social-links {
+        float: none;
+        padding-top: 10px;
+    }
