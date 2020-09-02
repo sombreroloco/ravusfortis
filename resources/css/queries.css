@@ -244,3 +244,73 @@
         float: none;
         padding-top: 10px;
     }
+
+    /* -------------------------- P8 -------------------------- */
+
+    /* -------------------------- P8 Extra -------------------------- */
+    /* --- MOBILE CSS NAVIGATION --- */
+    .logo {
+        height: 50px;
+        float: right;
+    }
+
+    #mobile-nav-button {
+        display: inline-block;
+        padding-top: 20px;
+        padding-left: 10px;
+        color: white;
+        font-size: 50px;
+        cursor: pointer
+    }
+
+    .overlay {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.9);
+        overflow-x: hidden;
+        transition: 0.5s;
+    }
+
+    .main-nav {
+        position: relative;
+        top: 10%;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+        font-size: 150%;
+    }
+    
+       .main-nav li {
+           width: 100%;
+       }
+
+       .main-nav li a:hover,
+       .main-nav li a:active {
+           border-bottom: 2px solid #2980b9;
+       }
+
+    .overlay .closebtn {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 60px;
+        border: none;
+        color: #fff;
+    }
+
+}
+
+    /* ---- Hide Mobile Nav Elements ---- */
+    @media only screen and (min-width: 481px) {
+
+        #mobile-nav-button,
+        .closebtn {
+            display: none;
+        }
+    }
+/* -------------------------- P8 Extra -------------------------- */

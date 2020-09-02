@@ -25,30 +25,36 @@
 <!----------------------------------- P6 Extra ---------------------------------------->  
 
 <!----------------------------------- P1 ----------------------------------------> 
-        <title>RavusFortis</title>
-    </head>
-    
-    <body>
-        <header>
-            <nav>
-                <div class="row">
-                    <img src="resources/img/logo-white.png" alt="RavusFortis Logo" class="logo">
-                    <div>
-                        <ul class="main-nav">
-                            <li><a href="#how-works">How it works</a></li>
-                            <li><a href="#testimonials">Testimonials</a></li>
-                            <li><a href="#cities">Our cities</a></li>
-                            <li><a href="#sign-up">Sign up</a></li>
-                        </ul>
-                    </div>
+<title>RavusFortis</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="row">
+                <!----------------------------------- P8 Extra ---------------------------------------->   
+                <span onclick="openNav()" id="mobile-nav-button">&#9776;</span>
+                <!----------------------------------- P8 Extra ---------------------------------------->  
+                <img src="resources/img/logo-white.png" alt="RavusFortis Logo" class="logo">
+                <div id="myNav" class="overlay">
+                    <!----------------------------------- P8 Extra ---------------------------------------->  
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <!----------------------------------- P8 Extra ---------------------------------------->  
+                    <ul class="main-nav">
+                        <li><a href="#how-works" onclick="closeNav()">How it works</a></li>
+                        <li><a href="#testimonials" onclick="closeNav()">Testimonials</a></li>
+                        <li><a href="#cities" onclick="closeNav()">Our cities</a></li>
+                        <li><a href="#sign-up" onclick="closeNav()">Sign up</a></li>
+                    </ul>
                 </div>
-            </nav>
-            <div class="hero-text-box">
-                <h1>Leave the couch.<br>Embrace the victory.</h1>
-                <a class="btn btn-full" href="#count-me">Count me in</a>
-                <a class="btn btn-ghost" href="#show-me">Show me more</a>
             </div>
-        </header>
+        </nav>
+        <div class="hero-text-box">
+            <h1>Leave the couch.<br>Embrace the victory.</h1>
+            <a class="btn btn-full" href="#count-me">Count me in</a>
+            <a class="btn btn-ghost" href="#show-me">Show me more</a>
+        </div>
+    </header>
 <!----------------------------------- P1 ----------------------------------------> 
 
 <!----------------------------------- P2 ---------------------------------------->
@@ -438,5 +444,22 @@
             AOS.init();
         </script>
 <!----------------------------------- P6 Extra ---------------------------------------->
+
+<!----------------------------------- P8 Extra ---------------------------------------->  
+        <!-- MOBILE NAV -->
+
+        <script>
+            function openNav() {
+                document.getElementById("myNav").style.width = "100%";
+            }
+
+            function closeNav() {
+                document.getElementById("myNav").style.width = "0%";
+                setTimeout(function() {
+                    document.getElementById("myNav").style.removeProperty("width");
+                }, 1000);
+            }
+        </script>
+<!----------------------------------- P8 Extra ----------------------------------------> 
     </body>
 </html>
